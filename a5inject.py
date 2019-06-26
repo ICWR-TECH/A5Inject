@@ -7,7 +7,7 @@ print """
 ###############################################
 """
 target=sys.argv[1]
-usr_a="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+usr_a="A5Inject ( SQL Injection Tool )"
 print "[*] Start Inject URL : " + target.replace("[*]", "")
 i="1111111111"
 for x in range(0, 50) :
